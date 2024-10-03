@@ -24,6 +24,16 @@ updates:
     schedule:
       interval: "weekly"
     groups:
-      project1-dependencies:
+      project1:
+        applies-to: version-updates
+        dependency-type: "production"
+
+  - package-ecosystem: "npm"
+    directory: "/apps/project-2"
+    versioning-strategy: "increase"
+    schedule:
+      interval: "weekly"
+    groups:
+      project2:
         applies-to: version-updates
         dependency-type: "production"
