@@ -5,8 +5,8 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "npm"
+    directory: "/"
     versioning-strategy: "increase"
     schedule:
       interval: "weekly"
@@ -17,3 +17,13 @@ updates:
       development-dependencies:
         applies-to: version-updates
         dependency-type: "development"
+
+  - package-ecosystem: "npm"
+    directory: "/apps/project-1"
+    versioning-strategy: "increase"
+    schedule:
+      interval: "weekly"
+    groups:
+      project1-dependencies:
+        applies-to: version-updates
+        dependency-type: "production"
