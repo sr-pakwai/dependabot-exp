@@ -1,11 +1,7 @@
 {
-  "name": "dependabot-exp",
+  "name": "project-2",
   "version": "1.0.0",
   "main": "index.js",
-  "private": true,
-  "workspaces": [
-    "apps/*"
-  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,8 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^4.18.1",
-    "react": "^16.13.0",
-    "webpack": "^5.88.0"
+    "axios": "^1.6.7",
+    "zod": "^3.22.3"
   }
 }
