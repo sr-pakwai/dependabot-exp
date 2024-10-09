@@ -17,6 +17,9 @@ updates:
       development-dependencies:
         applies-to: version-updates
         dependency-type: "development"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
 
   - package-ecosystem: "npm"
     directory: "/apps/project-1"
@@ -27,6 +30,9 @@ updates:
       project1:
         applies-to: version-updates
         dependency-type: "production"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
 
   - package-ecosystem: "npm"
     directory: "/apps/project-2"
@@ -37,3 +43,6 @@ updates:
       project2:
         applies-to: version-updates
         dependency-type: "production"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
